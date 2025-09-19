@@ -78,22 +78,16 @@ export function Footer() {
             </p>
             <div className="flex space-x-6 text-sm">
               <a
-                href="#"
+                href="/mentions-legales"
                 className="text-blue-100 hover:text-white transition-all duration-300 hover:translate-y-1 inline-block"
               >
                 Mentions légales
               </a>
               <a
-                href="#"
+                href="/politique-confidentialite"
                 className="text-blue-100 hover:text-white transition-all duration-300 hover:translate-y-1 inline-block"
               >
                 Politique de confidentialité
-              </a>
-              <a
-                href="#"
-                className="text-blue-100 hover:text-white transition-all duration-300 hover:translate-y-1 inline-block"
-              >
-                CGU
               </a>
             </div>
           </div>
