@@ -103,7 +103,8 @@ export function CRMSection() {
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Notre outil de gestion dédié vous permet de piloter facilement vos
-            activités liées aux CEE et à la rénovation énergétique.
+            activités liées aux CEE et à la transition énergétique et
+            écologique.
           </p>
         </header>
 

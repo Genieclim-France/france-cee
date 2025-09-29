@@ -18,7 +18,7 @@ export function Footer() {
             <p className="text-blue-100 text-sm leading-relaxed">
               Votre partenaire de confiance pour la valorisation des Certificats
               d&apos;Économies d&apos;Énergie et l&apos;accompagnement dans la
-              rénovation énergétique.
+              transition énergétique et écologique.
             </p>
           </div>
 

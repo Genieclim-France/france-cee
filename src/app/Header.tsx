@@ -148,7 +148,7 @@ export function Header() {
             <div className="hidden lg:block relative group">
               <Button
                 onClick={() => (window.location.href = "#contact")}
-                className="relative bg-gradient-to-r from-[#012650] to-[#012650] hover:from-[#012650]/90 hover:to-[#012650]/90 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-102 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden cursor-pointer"
+                className="relative bg-[#002B72] text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-102 hover:shadow-lg hover:-translate-y-0.5 overflow-hidden cursor-pointer"
               >
                 <span className="relative z-10 flex items-center space-x-2">
                   <span>Devenir partenaire</span>

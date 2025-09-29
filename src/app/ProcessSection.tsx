@@ -45,7 +45,7 @@ export function ProcessSection() {
   return (
     <section
       id="process"
-      className="relative py-24 bg-gradient-to-br from-[#012650] via-[#012650] to-[#012650]/90 overflow-hidden"
+      className="relative py-24 bg-[#002B72] overflow-hidden"
     >
       {/* Subtle background effects */}
       <div

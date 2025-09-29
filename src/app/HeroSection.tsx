@@ -4,6 +4,7 @@ import { Button } from "../app/ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useEffect, useState } from "react";
 import { Sparkles, Zap, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +16,7 @@ export function HeroSection() {
   return (
     <section
       id="hero-section"
-      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#012650] via-[#1a4a7a] to-[#2d5aa0] py-24"
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#002B72] py-24"
       role="banner"
       aria-labelledby="hero-title"
     >
@@ -31,7 +32,7 @@ export function HeroSection() {
         aria-hidden="true"
       >
         {/* Floating orbs */}
-        {[...Array(4)].map((_, i) => (
+        {[...Array(3)].map((_, i) => (
           <div
             key={i}
             className={`absolute rounded-full animate-bounce ${
@@ -53,10 +54,10 @@ export function HeroSection() {
           />
         ))}
 
-        {/* Geometric patterns */}
+        {/* Bulle en bas à gauche */}
         <div
-          className="absolute top-20 right-20 w-24 h-24 border border-white/40 rounded-full animate-spin opacity-40"
-          style={{ animationDuration: "30s" }}
+          className="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-br from-white/20 to-white/30 rounded-full animate-bounce opacity-30"
+          style={{ animationDuration: "4s", animationDelay: "2s" }}
           aria-hidden="true"
         ></div>
       </div>
@@ -91,7 +92,7 @@ export function HeroSection() {
             >
               <span className="text-white">Votre partenaire CEE pour la </span>
               <span className="relative">
-                <span className="text-white">rénovation</span>{" "}
+                <span className="text-white">transition</span>{" "}
                 <span className="text-red-400">énergétique</span>
                 {/* Underline effect - French colors */}
                 <div
@@ -244,6 +245,20 @@ export function HeroSection() {
           </aside>
         </aside>
       </main>
+
+      {/* Logo mask en bas à gauche */}
+      <div
+        className="absolute -bottom-30 -right-30 w-[60rem] h-[60rem] pointer-events-none"
+        aria-hidden="true"
+      >
+        <Image
+          src="/logomask.svg"
+          alt=""
+          width={320}
+          height={320}
+          className="w-full h-full object-contain"
+        />
+      </div>
 
       {/* Bottom gradient fade */}
       <div
