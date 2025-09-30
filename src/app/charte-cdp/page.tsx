@@ -44,8 +44,8 @@ export default function CharteCDPPage() {
             {/* Fallback pour les navigateurs qui ne supportent pas l'affichage PDF */}
             <div className="p-6 bg-gray-50 border-t">
               <p className="text-sm text-gray-600 mb-4">
-                Si le document ne s'affiche pas correctement, vous pouvez le
-                télécharger :
+                Si le document ne s&apos;affiche pas correctement, vous pouvez
+                le télécharger :
               </p>
               <a
                 href="/charte-cdp/Chartes COUP DE POUCE CHAUFFAGE.pdf"
@@ -76,9 +76,10 @@ export default function CharteCDPPage() {
               À propos de cette charte
             </h3>
             <p className="text-gray-700 mb-4">
-              Cette charte définit les conditions et modalités d'application du
-              dispositif "Coup de Pouce Chauffage" pour les professionnels du
-              bâtiment partenaires de France CEE.
+              Cette charte définit les conditions et modalités
+              d&apos;application du dispositif &quot;Coup de Pouce
+              Chauffage&quot; pour les professionnels du bâtiment partenaires de
+              France CEE.
             </p>
           </div>
         </div>

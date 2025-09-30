@@ -1,5 +1,6 @@
 import { Button } from "../app/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -28,28 +29,28 @@ export function Footer() {
               <h4 className="font-bold mb-4">Nos services</h4>
               <ul className="space-y-2 text-sm text-blue-100">
                 <li>
-                  <a
+                  <Link
                     href="/#services"
                     className="hover:text-white transition-all duration-300 hover:translate-x-2 inline-block"
                   >
                     Gestion CEE
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#process"
                     className="hover:text-white transition-all duration-300 hover:translate-x-2 inline-block"
                   >
                     Devenir partenaires
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#crm"
                     className="hover:text-white transition-all duration-300 hover:translate-x-2 inline-block"
                   >
                     CRM dédié
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
