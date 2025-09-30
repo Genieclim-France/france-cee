@@ -78,17 +78,9 @@ export default function MentionsLegales() {
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center">
                       <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
-                        SIRET :
+                        SIREN :
                       </dt>
-                      <dd className="text-gray-900">[À compléter]</dd>
-                    </div>
-                    <div className="flex flex-col sm:flex-row sm:items-center">
-                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
-                        TVA Intracommunautaire :
-                      </dt>
-                      <dd className="text-gray-900">
-                        [À compléter si applicable]
-                      </dd>
+                      <dd className="text-gray-900">991 626 185</dd>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center">
                       <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
