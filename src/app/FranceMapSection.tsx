@@ -1,5 +1,3 @@
-"use client";
-
 export function FranceMapSection() {
   return (
     <section className="relative py-24 bg-gradient-to-br from-red-50/20 via-white to-blue-50/30 overflow-hidden">

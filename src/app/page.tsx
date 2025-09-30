@@ -4,7 +4,7 @@ import { MissionSection } from "./MissionSection";
 import { FranceMapSection } from "./FranceMapSection";
 import { ProcessSection } from "./ProcessSection";
 import { CRMSection } from "./CRMSection";
-import { ContactSection } from "./ContactSection";
+import { ContactSectionWrapper } from "./ContactSectionWrapper";
 import { Footer } from "./Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <FranceMapSection />
       <ProcessSection />
       <CRMSection />
-      <ContactSection />
+      <ContactSectionWrapper />
       <Footer />
     </div>
   );

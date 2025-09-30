@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "../app/ui/button";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useEffect, useState } from "react";
 import { Sparkles, Zap, TrendingUp } from "lucide-react";
 import Image from "next/image";
@@ -62,21 +61,20 @@ export function HeroSection() {
         ></div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left Column - Content */}
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <article
-          className={`space-y-8 transition-all duration-1000 ${
+          className={`space-y-10 transition-all duration-1000 text-center md:text-left ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
           {/* Badge */}
-          <span className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group">
+          <span className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20 shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer group mx-auto md:mx-0">
             <Sparkles
               className="w-4 h-4 text-white group-hover:text-red-400 transition-colors duration-300"
               aria-hidden="true"
             />
             <span className="text-sm font-medium text-white group-hover:text-blue-200 transition-colors duration-300">
-              #1 Mandataire CEE en France
+              Mandataire CEE en France
             </span>
             <span
               className="w-2 h-2 bg-green-500 rounded-full animate-pulse"
@@ -102,7 +100,7 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-xl text-blue-100 leading-relaxed max-w-2xl">
+            <p className="text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto md:mx-0">
               <span className="font-semibold text-white">France CEE</span>{" "}
               révolutionne l&apos;accompagnement des artisans et professionnels
               du bâtiment.
@@ -116,7 +114,7 @@ export function HeroSection() {
 
           {/* Action Buttons */}
           <nav
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
             role="navigation"
             aria-label="Actions principales"
           >
@@ -157,7 +155,7 @@ export function HeroSection() {
 
           {/* Stats */}
           <section
-            className="grid grid-cols-2 gap-6 pt-8 border-t border-white/20"
+            className="grid grid-cols-2 gap-6 pt-8 border-t border-white/20 max-w-xl mx-auto md:mx-0"
             aria-label="Statistiques France CEE"
           >
             {[
@@ -196,54 +194,6 @@ export function HeroSection() {
             ))}
           </section>
         </article>
-
-        {/* Right Column - Image */}
-        <aside
-          aria-label="Image illustrative France CEE"
-          aria-hidden="true"
-          className={`relative transition-all duration-1000 animation-delay-500 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-          }`}
-        >
-          {/* Main image container */}
-          <figure className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-105 group">
-            <ImageWithFallback
-              src="https://images.unsplash.com/photo-1752852381090-d3e0edf8f373?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmVyZ3klMjBlZmZpY2llbmN5JTIwcmVub3ZhdGlvbiUyMGhvdXNlJTIwaW5zdWxhdGlvbiUyMHdvcmtlcnxlbnwxfHx8fDE3NTc5MzU1ODF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="Équipe de professionnels France CEE - Rénovation énergétique et isolation"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-
-            {/* Image overlay with gradient */}
-            <div
-              className="absolute inset-0 bg-gradient-to-t from-[#012650]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              aria-hidden="true"
-            ></div>
-
-            {/* Glow effect around image - More subtle */}
-            <div
-              className="absolute inset-0 bg-gradient-to-r from-white/10 to-red-400/10 rounded-3xl blur-xl scale-105 opacity-30 group-hover:opacity-50 transition-opacity duration-500"
-              aria-hidden="true"
-            ></div>
-          </figure>
-
-          {/* Floating badges - More subtle */}
-          <aside
-            className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-lg p-4 border border-gray-100 hover:scale-105 transition-all duration-300 group flex items-center space-x-3"
-            aria-label="Certification qualité premium"
-          >
-            <span className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center">
-              <Sparkles className="w-6 h-6 text-white" aria-hidden="true" />
-            </span>
-            <span>
-              <span className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors duration-300 block">
-                Certifié
-              </span>
-              <span className="text-sm text-gray-500 group-hover:text-green-600 transition-colors duration-300 block">
-                Qualité Premium
-              </span>
-            </span>
-          </aside>
-        </aside>
       </main>
 
       {/* Logo mask en bas à gauche */}
