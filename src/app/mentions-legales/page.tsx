@@ -29,41 +29,74 @@ export default function MentionsLegales() {
                   1. Éditeur du site
                 </h2>
                 <div className="bg-blue-50 p-6 rounded-2xl">
-                  <p className="mb-4">
-                    <strong>Dénomination sociale :</strong> France CEE
-                  </p>
-                  <p className="mb-4">
-                    <strong>Forme juridique :</strong> [À compléter - SARL, SAS,
-                    etc.]
-                  </p>
-                  <p className="mb-4">
-                    <strong>Capital social :</strong> [À compléter] €
-                  </p>
-                  <p className="mb-4">
-                    <strong>Siège social :</strong> 20 rue Jean Mermoz, 33185 LE
-                    HAILLAN, France
-                  </p>
-                  <p className="mb-4">
-                    <strong>Téléphone :</strong> 09 72 12 14 01
-                  </p>
-                  <p className="mb-4">
-                    <strong>Email :</strong> contact@francecee.fr
-                  </p>
-                  <p className="mb-4">
-                    <strong>RCS :</strong> [À compléter - Numéro
-                    d&apos;inscription au Registre du Commerce et des Sociétés]
-                  </p>
-                  <p className="mb-4">
-                    <strong>SIRET :</strong> [À compléter]
-                  </p>
-                  <p className="mb-4">
-                    <strong>TVA Intracommunautaire :</strong> [À compléter si
-                    applicable]
-                  </p>
-                  <p className="mb-0">
-                    <strong>Directeur de publication :</strong> [À compléter -
-                    Nom du dirigeant]
-                  </p>
+                  <dl className="space-y-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Dénomination sociale :
+                      </dt>
+                      <dd className="text-gray-900">France CEE</dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Forme juridique :
+                      </dt>
+                      <dd className="text-gray-900">SAS</dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Capital social :
+                      </dt>
+                      <dd className="text-gray-900">100 000 €</dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-start">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Siège social :
+                      </dt>
+                      <dd className="text-gray-900">
+                        20 rue Jean Mermoz, 33185 LE HAILLAN, France
+                      </dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Téléphone :
+                      </dt>
+                      <dd className="text-gray-900">09 72 12 14 01</dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Email :
+                      </dt>
+                      <dd className="text-gray-900">contact@francecee.fr</dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        RCS :
+                      </dt>
+                      <dd className="text-gray-900">
+                        991 626 185 R.C.S Bordeaux
+                      </dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        SIRET :
+                      </dt>
+                      <dd className="text-gray-900">[À compléter]</dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        TVA Intracommunautaire :
+                      </dt>
+                      <dd className="text-gray-900">
+                        [À compléter si applicable]
+                      </dd>
+                    </div>
+                    <div className="flex flex-col sm:flex-row sm:items-center">
+                      <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
+                        Directeur de publication :
+                      </dt>
+                      <dd className="text-gray-900">Camille Pernot</dd>
+                    </div>
+                  </dl>
                 </div>
               </section>
 
