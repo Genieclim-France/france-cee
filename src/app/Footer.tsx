@@ -29,7 +29,7 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-blue-100">
                 <li>
                   <a
-                    href="#"
+                    href="/#services"
                     className="hover:text-white transition-all duration-300 hover:translate-x-2 inline-block"
                   >
                     Gestion CEE
@@ -37,7 +37,7 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="#process"
                     className="hover:text-white transition-all duration-300 hover:translate-x-2 inline-block"
                   >
                     Devenir partenaires
@@ -77,6 +77,12 @@ export function Footer() {
               © {new Date().getFullYear()} France CEE. Tous droits réservés.
             </p>
             <div className="flex space-x-6 text-sm">
+              <a
+                href="/charte-cdp"
+                className="text-blue-100 hover:text-white transition-all duration-300 hover:translate-y-1 inline-block"
+              >
+                Charte CDP
+              </a>
               <a
                 href="/mentions-legales"
                 className="text-blue-100 hover:text-white transition-all duration-300 hover:translate-y-1 inline-block"
