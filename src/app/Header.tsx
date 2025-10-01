@@ -242,7 +242,7 @@ export function Header() {
                   setIsMobileMenuOpen(false);
                   window.location.href = "#contact";
                 }}
-                className="w-full bg-gradient-to-r from-[#012650] to-[#012650] hover:from-[#012650]/90 hover:to-[#012650]/90 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300"
+                className="w-full bg-gradient-to-r from-[#002B72] to-[#002B72] hover:from-[#002B72]/90 hover:to-[#002B72]/90 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300"
                 aria-label="Devenir partenaire - Aller à la section contact"
               >
                 <span className="flex items-center justify-center space-x-2">
