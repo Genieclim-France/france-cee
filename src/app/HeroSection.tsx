@@ -25,42 +25,6 @@ export function HeroSection() {
         aria-hidden="true"
       ></div>
 
-      {/* Animated Background Shapes */}
-      <div
-        className="absolute inset-0 overflow-hidden pointer-events-none"
-        aria-hidden="true"
-      >
-        {/* Floating orbs */}
-        {[...Array(3)].map((_, i) => (
-          <div
-            key={i}
-            className={`absolute rounded-full animate-bounce ${
-              i % 3 === 0
-                ? "bg-gradient-to-br from-white/20 to-white/30"
-                : i % 3 === 1
-                ? "bg-gradient-to-br from-white/15 to-white/25"
-                : "bg-gradient-to-br from-red-400/15 to-red-300/20"
-            }`}
-            style={{
-              width: `${80 + i * 15}px`,
-              height: `${80 + i * 15}px`,
-              left: `${15 + i * 20}%`,
-              top: `${20 + (i % 3) * 25}%`,
-              animationDelay: `${i * 1}s`,
-              animationDuration: `${5 + i * 0.5}s`,
-            }}
-            aria-hidden="true"
-          />
-        ))}
-
-        {/* Bulle en bas à gauche */}
-        <div
-          className="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-br from-white/20 to-white/30 rounded-full animate-bounce opacity-30"
-          style={{ animationDuration: "4s", animationDelay: "2s" }}
-          aria-hidden="true"
-        ></div>
-      </div>
-
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <article
           className={`space-y-10 transition-all duration-1000 text-center md:text-left ${
@@ -73,7 +37,7 @@ export function HeroSection() {
               className="w-4 h-4 text-white group-hover:text-red-400 transition-colors duration-300"
               aria-hidden="true"
             />
-            <span className="text-sm font-medium text-white group-hover:text-blue-200 transition-colors duration-300">
+            <span className="text-sm font-medium text-white group-hover:text-blue-200 transition-colors duration-300 drop-shadow-md">
               Mandataire CEE en France
             </span>
             <span
@@ -88,10 +52,14 @@ export function HeroSection() {
               id="hero-title"
               className="text-5xl lg:text-7xl font-bold leading-tight"
             >
-              <span className="text-white">Votre partenaire CEE pour la </span>
+              <span className="text-white drop-shadow-lg">
+                Votre partenaire CEE pour la{" "}
+              </span>
               <span className="relative">
-                <span className="text-white">transition</span>{" "}
-                <span className="text-red-400">énergétique</span>
+                <span className="text-white drop-shadow-lg">transition</span>{" "}
+                <span className="text-[#C7271B] drop-shadow-lg">
+                  énergétique
+                </span>
                 {/* Underline effect - French colors */}
                 <div
                   className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-white to-red-400 rounded-full transform scale-x-0 animate-scale-x animation-delay-1000"
@@ -100,11 +68,13 @@ export function HeroSection() {
               </span>
             </h1>
 
-            <p className="text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto md:mx-0">
-              <span className="font-semibold text-white">France CEE</span>{" "}
+            <p className="text-xl text-blue-100 leading-relaxed max-w-3xl mx-auto md:mx-0 drop-shadow-md">
+              <span className="font-semibold text-white drop-shadow-lg">
+                France CEE
+              </span>{" "}
               révolutionne l&apos;accompagnement des artisans et professionnels
               du bâtiment.
-              <span className="text-white font-medium">
+              <span className="text-white font-medium drop-shadow-md">
                 {" "}
                 Valorisez vos chantiers et intégrez directement les primes CEE
                 dans vos devis.
@@ -121,7 +91,7 @@ export function HeroSection() {
             <Button
               onClick={() => (window.location.href = "#process")}
               size="lg"
-              className="cursor-pointer relative bg-gradient-to-r from-[#C7271B] to-red-600 hover:from-red-600 hover:to-[#C7271B] text-white px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-102 hover:shadow-lg active:scale-95 group overflow-hidden shadow-lg"
+              className="cursor-pointer relative bg-[#C7271B] hover:bg-gradient-to-r from-[#C7271B] to-red-600 text-white px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-102 hover:shadow-lg active:scale-95 group overflow-hidden shadow-lg"
               aria-label="Commencer maintenant - Aller à la section processus"
             >
               <span className="relative z-10 flex items-center">
@@ -142,7 +112,7 @@ export function HeroSection() {
               onClick={() => (window.location.href = "#crm")}
               size="lg"
               variant="outline"
-              className="cursor-pointer border-2 border-white/60 text-[#012650] hover:bg-white/10 hover:border-red-400 hover:text-white px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-102 hover:shadow-md active:scale-95 group backdrop-blur-sm shadow-sm"
+              className="cursor-pointer border-2 border-black text-white bg-black hover:bg-transparent hover:border-red-400 hover:text-white px-8 py-4 text-lg font-semibold rounded-2xl transition-all duration-300 hover:scale-102 hover:shadow-md active:scale-95 group backdrop-blur-sm shadow-sm"
               aria-label="Découvrir notre CRM - Aller à la section CRM"
             >
               <TrendingUp
@@ -169,7 +139,7 @@ export function HeroSection() {
                 icon: TrendingUp,
                 value: "48h",
                 label: "Délai de traitement",
-                color: "text-red-400",
+                color: "text-[#C7271B]",
               },
             ].map((stat, index) => (
               <article
@@ -182,12 +152,12 @@ export function HeroSection() {
                   aria-hidden="true"
                 />
                 <span
-                  className={`text-2xl font-bold ${stat.color} transition-transform duration-300 block`}
+                  className={`text-2xl font-bold ${stat.color} transition-transform duration-300 block drop-shadow-md`}
                   aria-label={stat.value}
                 >
                   {stat.value}
                 </span>
-                <span className="text-sm text-blue-200 group-hover:text-white transition-colors duration-300 block">
+                <span className="text-sm text-blue-200 group-hover:text-white transition-colors duration-300 block drop-shadow-sm">
                   {stat.label}
                 </span>
               </article>
