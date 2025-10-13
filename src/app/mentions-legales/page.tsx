@@ -60,7 +60,7 @@ export default function MentionsLegales() {
                       <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">
                         Téléphone :
                       </dt>
-                      <dd className="text-gray-900">09 72 12 14 01</dd>
+                      <dd className="text-gray-900">09 72 19 64 12</dd>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center">
                       <dt className="font-semibold text-gray-700 w-48 mb-1 sm:mb-0">

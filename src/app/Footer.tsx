@@ -61,7 +61,7 @@ export function Footer() {
             <h4 className="font-bold mb-4">Contact</h4>
             <div className="space-y-2 text-sm text-blue-100">
               <p>📧 contact@francecee.fr</p>
-              <p>📞 09 72 12 14 01</p>
+              <p>📞 09 72 19 64 12</p>
               <p>📍 20 rue jean Mermoz, 33185 LE HAILLAN</p>
             </div>
             <div className="mt-4">

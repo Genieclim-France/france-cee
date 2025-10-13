@@ -194,12 +194,12 @@ export function ContactSection() {
                   <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
                     <Phone className="w-8 h-8 text-[#012650] transition-all duration-300 group-hover:text-[#012650]/90" />
                   </div>
-                  <a href="tel:0972121401" className="space-y-1">
+                  <a href="tel:0972196412" className="space-y-1">
                     <h4 className="text-xl font-semibold text-gray-900 group-hover:text-[#012650] transition-colors duration-300">
                       Téléphone
                     </h4>
                     <p className="text-gray-600 text-lg font-medium">
-                      09 72 12 14 01
+                      09 72 19 64 12{" "}
                     </p>
                     <p className="text-sm text-gray-500">Lun-Ven : 9h-18h</p>
                   </a>

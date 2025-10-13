@@ -60,7 +60,7 @@ export default function PolitiqueConfidentialite() {
                     HAILLAN, France
                   </p>
                   <p className="mb-4">
-                    <strong>Téléphone :</strong> 09 72 12 14 01
+                    <strong>Téléphone :</strong> 09 72 19 64 12
                   </p>
                   <p className="mb-4">
                     <strong>Email :</strong> contact@francecee.fr
@@ -252,8 +252,9 @@ export default function PolitiqueConfidentialite() {
                   </p>
                   <p className="text-gray-700 text-sm">
                     Tous nos prestataires sont tenus par des accords de
-                    confidentialité et s&apos;engagent à respecter la réglementation
-                    en matière de protection des données personnelles.
+                    confidentialité et s&apos;engagent à respecter la
+                    réglementation en matière de protection des données
+                    personnelles.
                   </p>
                 </div>
               </section>
@@ -304,7 +305,9 @@ export default function PolitiqueConfidentialite() {
                       </tr>
                       <tr>
                         <td className="p-4 font-medium">Newsletter</td>
-                        <td className="p-4">Jusqu&apos;à désinscription + 3 ans</td>
+                        <td className="p-4">
+                          Jusqu&apos;à désinscription + 3 ans
+                        </td>
                         <td className="p-4">Preuve du consentement</td>
                       </tr>
                     </tbody>
@@ -517,8 +520,8 @@ export default function PolitiqueConfidentialite() {
                       📊 Cookies d&apos;analyse
                     </h3>
                     <p className="text-gray-700 text-sm">
-                      Mesure d&apos;audience et amélioration du site (consentement
-                      requis)
+                      Mesure d&apos;audience et amélioration du site
+                      (consentement requis)
                     </p>
                   </div>
 
@@ -554,7 +557,7 @@ export default function PolitiqueConfidentialite() {
                       Email : <strong>contact@francecee.fr</strong>
                     </p>
                     <p className="mb-2">
-                      Téléphone : <strong>09 72 12 14 01</strong>
+                      Téléphone : <strong>09 72 19 64 12</strong>
                     </p>
                     <p className="text-sm opacity-90">
                       Du lundi au vendredi, 9h-18h
